@@ -1,0 +1,103 @@
+.datos .inside {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px; }
+  .datos .inside .title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #292929; }
+  .datos .inside .accounts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center; }
+    .datos .inside .accounts .icon-mail {
+      font-size: 20px; }
+
+.fyq {
+  background: #F3F3F6; }
+  .fyq .inside {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px; }
+    .fyq .inside .title {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #292929; }
+    .fyq .inside .accordion {
+      width: 80%;
+      margin: 0 auto; }
+      .fyq .inside .accordion button {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 0; }
+      .fyq .inside .accordion .card {
+        margin: 10px; }
+      .fyq .inside .accordion .card-header {
+        background: #000051; }
+      .fyq .inside .accordion .collapse {
+        border-bottom: 1px solid lightgray; }
+
+.contact {
+  border-bottom: 1px solid lightgray;
+  color: #292929; }
+  .contact .inside {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px; }
+    .contact .inside .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #292929; }
+    .contact .inside .infor {
+      text-align: center;
+      font-size: 17px;
+      margin-bottom: 20px; }
+    .contact .inside .formContact form {
+      width: 100%;
+      margin: 0 auto; }
+      .contact .inside .formContact form .fields {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 60%;
+        margin: 0 auto; }
+        .contact .inside .formContact form .fields .form-group {
+          margin: 0 30px;
+          width: 40%; }
+      .contact .inside .formContact form input, .contact .inside .formContact form textarea {
+        border: 1px solid #000051; }
+      .contact .inside .formContact form .message {
+        width: 60%;
+        margin: 15px auto; }
+      .contact .inside .formContact form .sendBtn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .contact .inside .formContact form .sendBtn .btnSend {
+          background: #000051;
+          color: white;
+          font-size: 15px;
+          font-weight: bold; }

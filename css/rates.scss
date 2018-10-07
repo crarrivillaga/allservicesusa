@@ -1,0 +1,199 @@
+$titleColor: rgb(41, 41, 41);
+$assBlueColor: #000051;
+$assYellowColor: #F7D701;
+
+@mixin centrado {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.maritimo {
+   border-bottom: 1px solid lightgray;
+   .inside {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+
+      .title {
+         font-weight: bold;
+         font-size: 30px;
+         margin-bottom: 30px;
+         color:$titleColor;
+         border-bottom: 3px solid #000066;
+         width: 25%;
+      }
+
+      .marit {
+         .boxes {
+            text-align: center;
+            img {
+               width: 50%;
+            }
+
+            p {
+               margin: 10px 0;
+               text-align: center;
+               font-weight: bold;
+            }
+         }
+
+         .data {
+            p, small {
+               margin: 10px 0;
+               text-align: center;
+               font-weight: bold;
+            }
+
+            table {
+               font-size: 16px;
+               margin: 0 auto;
+               tr {
+                  text-align: center;
+                  border: 1px solid black;
+                  td, th {
+                     padding: 10px;
+                     border: 1px solid black;
+                  }
+                  th {
+                     background: lightgray;
+                     color: $titleColor;
+                     font-size: 18px;
+                  }
+               }
+            }
+         }
+
+         .delivery {
+            margin: 65px 0;
+            p {
+               font-weight: bold;
+               text-align: center;
+               font-size: 20px;
+            }
+         }
+
+         .calculator {
+            width: 70%;
+            margin: 0 auto;
+
+            button {
+               font-weight: bold;
+               color: $titleColor;
+               text-decoration: none;
+            }
+
+            .card {
+               border-bottom: 1px solid lightgray;
+
+               .card-body {
+                  .dimentions {
+                     display: flex;
+
+                     label {
+                        font-weight: bold;
+                        color: $titleColor;
+                     }
+
+                     input {
+                        width: 15%;
+                        background: white;
+                     }
+
+                     p {
+                        margin: 6px 20px;
+                        text-align: center;
+                        font-weight: bold;
+                     }
+
+                     #result {
+                        margin:6px -10px;
+                        #format {
+                           margin: 6px -9px;
+                        }
+                     }
+
+                     .btnResult {
+                        background: $assBlueColor;
+                        color: white;
+                        font-size: 15px;
+                     }
+
+                     .btnConvert {
+                        margin-left: 20px;
+                     }
+
+                     .reset {
+                        background: $assYellowColor;
+                        color: black;
+                     }
+                  }
+                  
+                  .need {
+                     margin: 20px 0;
+                     
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+.aereo {
+   .inside {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+
+      .title {
+         font-weight: bold;
+         font-size: 30px;
+         margin-bottom: 30px;
+         color:$titleColor;
+         border-bottom: 3px solid #000066;
+         width: 25%;
+      }
+
+      .air {
+         .data {
+            p, small {
+               margin: 10px 0;
+               text-align: center;
+               font-weight: bold;
+            }
+         }
+
+         .delivery {
+            margin: 65px 0;
+            p {
+               font-weight: bold;
+               text-align: center;
+               font-size: 20px;
+            }
+         }
+      }
+   }
+}
+
+.others {   
+   background: $assYellowColor; 
+   color:black;
+   .inside {
+      padding: 20px 40px;
+      .subtitle {
+         margin-bottom: 10px;
+         font-size: 20px;
+         font-weight: bold;
+      }
+
+      ul {
+         li {
+            list-style: circle;
+            font-size: 17px;
+            color: black;
+         }
+      }
+   }
+}

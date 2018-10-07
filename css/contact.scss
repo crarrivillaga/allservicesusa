@@ -1,0 +1,144 @@
+$titleColor: rgb(41, 41, 41);
+$endSection: 1px solid lightgray;
+$assBlueColor: #000051;
+$assGrayColor: #F3F3F6;
+$assYellowColor: #F7D701;
+
+.datos {
+   
+   .inside {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+
+      .title {
+         font-size: 25px;
+         font-weight: bold;
+         margin-bottom: 30px;
+         text-align: center;
+         color: $titleColor;
+      }
+
+      .accounts {
+         display: flex;
+         align-content: center;
+         justify-content: center;
+         text-align: center;
+
+         .icon-mail {
+            font-size: 20px;
+         }
+      }
+   }
+
+}
+
+.fyq {
+   background: $assGrayColor;
+
+   .inside {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+
+      .title {
+         font-size: 25px;
+         font-weight: bold;
+         margin-bottom: 30px;
+         text-align: center;
+         color: $titleColor;
+      }
+
+      .accordion {
+         width: 80%;
+         margin: 0 auto;
+
+         button {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 0;
+         }
+
+         .card {
+            margin: 10px;
+         }
+
+         .card-header {
+            background: $assBlueColor;
+         }
+
+         .collapse {
+            border-bottom: 1px solid lightgray;
+         }
+      }
+   }
+}
+
+
+.contact {
+   border-bottom: $endSection;
+   color: $titleColor;
+
+   .inside {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+
+      .title {
+         font-size: 20px;
+         font-weight: bold;
+         margin-bottom: 30px;
+         text-align: center;
+         color: $titleColor;
+      }
+
+      .infor {
+         text-align: center;
+         font-size: 17px;
+         margin-bottom: 20px;
+      }
+
+      .formContact {
+         form {
+            width: 100%;
+            margin: 0 auto;
+
+            .fields {
+               display: flex;
+               align-content: center;
+               justify-content: center;
+               width: 60%;
+               margin: 0 auto;
+
+               .form-group {
+                  margin: 0 30px;
+                  width: 40%;
+               }
+            }
+
+            input, textarea {
+               border: 1px solid $assBlueColor;
+            }
+
+            .message {
+               width: 60%;
+               margin: 15px auto;
+            }
+
+            .sendBtn {
+               display: flex;
+               align-content: center;
+               justify-content: center;
+
+               .btnSend {
+                  background: $assBlueColor;
+                  color: white;
+                  font-size: 15px;
+                  font-weight: bold;
+               }
+            }
+         }
+      }
+   }
+}

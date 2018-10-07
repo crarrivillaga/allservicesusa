@@ -1,0 +1,146 @@
+.about {
+  background: #F3F3F6;
+  border-bottom: 1px solid lightgray; }
+  .about .inside {
+    color: #424242;
+    width: 90%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px; }
+    .about .inside .aboutInfo {
+      width: 100%; }
+      .about .inside .aboutInfo .title {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-align: center;
+        color: #292929; }
+      .about .inside .aboutInfo .info {
+        font-size: 16px; }
+        .about .inside .aboutInfo .info ul {
+          margin-left: 20px; }
+          .about .inside .aboutInfo .info ul li {
+            list-style-type: circle; }
+    .about .inside .aboutImg {
+      width: 60%;
+      position: relative; }
+      .about .inside .aboutImg img {
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+
+.promo {
+  background: #0a9756;
+  color: white; }
+  .promo .inside {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .promo .inside .promoImg {
+      width: 50%;
+      position: relative;
+      text-align: center; }
+      .promo .inside .promoImg img {
+        width: 50%; }
+    .promo .inside .subs .title {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+      color: white; }
+    .promo .inside .subs .text {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 20px; }
+    .promo .inside .subs .subscribe {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .promo .inside .subs .subscribe form {
+        width: 100%; }
+        .promo .inside .subs .subscribe form .form-group {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-line-pack: center;
+          align-content: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          .promo .inside .subs .subscribe form .form-group input {
+            width: 60%;
+            margin-right: 10px; }
+          .promo .inside .subs .subscribe form .form-group .btnSubs {
+            background: #000051;
+            color: white;
+            font-size: 15px;
+            font-weight: bold; }
+
+.shipping {
+  background: #F3F3F6; }
+  .shipping .inside {
+    color: #424242;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px; }
+    .shipping .inside .now .title {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #292929; }
+    .shipping .inside .now .places {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      margin: 0 auto; }
+      .shipping .inside .now .places .country {
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold; }
+        .shipping .inside .now .places .country img {
+          width: 40%; }
+    .shipping .inside .soon .title {
+      font-size: 25px;
+      font-weight: bold;
+      margin: 30px 0;
+      text-align: center;
+      color: #292929; }
+    .shipping .inside .soon .newServices {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      font-size: 16px; }
+      .shipping .inside .soon .newServices ul {
+        width: 40%;
+        margin: 0 auto; }
+        .shipping .inside .soon .newServices ul li {
+          list-style: circle; }
+    .shipping .inside .prices {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 20px; }
+      .shipping .inside .prices a {
+        color: #292929; }

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+      <link rel="stylesheet" href="css/header.css">
+      <link rel="stylesheet" href="css/rates.css">
+      <link rel="stylesheet" href="css/slick-theme.css">
+      <link rel="stylesheet" href="css/slick.css">
+      
+      <title>All Services Solutions - USA</title>
+   </head>
+   <body>
+      <header>
+         <div class="logo">
+            <a href="index.html"><img src="images/imglogo.png" alt="" class="img-fluid"></a>
+         </div>
+
+         <ul>
+            <!-- <li><a href="#" style="text-decoration: none;">Home</a></li> -->
+            <li><a href="index.html#shipping" style="text-decoration: none;">Servicios Logisticos</a></li>
+            <li><a href="#" style="text-decoration: none;">Promociones</a></li>
+            <li><a href="rates.html" style="text-decoration: none;">Tarifas</a></li>
+            <li><a href="#" style="text-decoration: none;">Contacto</a></li>
+         </ul>
+      </header>
+
+      <div class="slideImgs">
+         <div class="slideshow">
+            <div><img src="images/slide1.png"></div>
+            <div><img src="images/slide2.png"></div>
+         </div>
+      </div>
+
+      <div class="maritimo">
+         <div class="inside">
+            <div class="title">
+               Envío marítimo
+            </div>
+
+            <div class="marit">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-3 boxes">
+                        <p>Tamaño de caja</p>
+                        <img src="images/boxes2.png" alt="">
+                     </div>
+                     <div class="col-md-6 center-block data">
+                        <p>Precio por pie cúbico: $17 USD / ft<sup>3</sup>
+                        <br>
+                        <small>Ejemplo de precio / peso</small></p>
+                        
+                        <table>
+                           <tr>
+                              <th>2 ft<sup>3</sup></th>
+                              <th>3 ft<sup>3</sup></th>
+                              <th>5 ft<sup>3</sup></th>
+                           </tr>
+                           <tr>
+                              <td>$34 USD</td>
+                              <td>$51 USD</td>
+                              <td>$85 USD</td>
+                           </tr>
+                        </table>
+                     </div>
+                     <div class="col-md-3 delivery">
+                        <p>Tiempo de entrega:<br> 3 a 4 semanas</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="calculator">
+                  <div class="inside">
+                     <div class="accordion" id="accordionExample">            
+                        <div class="card">
+                           <div class="card-header" id="headingOne">
+                              <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                 Calcular precio / peso
+                              </button>
+                              </h5>
+                           </div>
+
+                           <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                              <div class="card-body">
+                                 <label>Dimensiones</label>
+                                 <div class="dimentions">
+                                    <input type="text" class="form-control" id="large" placeholder="Longitud"><p>X</p>
+                                    <input type="text" class="form-control" id="width" placeholder="Ancho"><p>X</p>
+                                    <input type="text" class="form-control" id="height" placeholder="Altura"><p>=</p>
+                                    <p id="result"></p><p id="format">ft<sup>3</sup></p>
+                                    <button class="btn btnResult" onclick="getResult()">RESULTADO</button>
+                                 </div>
+
+                                 <p class="need">Utiliza nuestro conversor de centímetros (cm) a pulgadas (in).</p>
+
+                                 <div class="accordion conversor" id="accordionExample2">
+                                    <div class="card">
+                                       <div class="card-header" id="headingTwo">
+                                          <h5 class="mb-0">
+                                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                             Conversor
+                                          </button>
+                                          </h5>
+                                       </div>
+            
+                                       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
+                                          <div class="card-body">
+                                             <label>Centímetros a Pulgadas</label>
+                                             <div class="dimentions">
+                                                <input type="text" class="form-control" id="cm" placeholder="cm"><p>=></p>
+                                                <input type="text" class="form-control" id="in" placeholder="in" readonly>
+                                                <button class="btn btnResult btnConvert" onclick="getConvertion()">CONVERTIR</button>
+                                                <button class="btn btnResult btnConvert reset" onclick="reset()">LIMPIAR</button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+      <div class="aereo">
+         <div class="inside">
+            <div class="title">
+               Envío aereo
+            </div>
+
+            <div class="air">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-6 center-block delivery">
+                        <p>Precio por libra: $3.5 USD / lb</p>
+                     </div>
+                     <div class="col-md-6 delivery">
+                        <p>Tiempo de entrega:<br> 4 a 5 días</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="others">
+         <div class="inside">
+            <div class="subtitle">
+            Information
+            </div>
+
+            <ul>
+            <li>Pick up service and / or packing at home in Fort Myers, Cape Coral, Stero Naples and surrounding areas at no additional cost.</li>
+            <li>Service of purchase and / or reception of products, we pack them and send them to the door of your house in the desired destination address.</li>
+            </ul>
+         </div>
+      </div>
+
+
+
+      <footer>
+         <div class="inside">
+            All Services Solutions. All rights reserved.
+         </div>
+      </footer>
+      
+      <div id="scripts">
+         <script
+         src="https://code.jquery.com/jquery-3.3.1.min.js"
+         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+         crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+         <script src="js/calculator.js"></script>
+         <script src="js/goUp.js"></script>
+         <script src="js/slick.min.js"></script>
+         <script src="js/startCarousel.js"></script>
+      </div>
+   </body>
+</html>
