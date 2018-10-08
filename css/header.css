@@ -212,4 +212,8 @@ footer {
         .movil .grupo .fastLink .opc .icon-facebook {
           margin: 0 30px; }
         .movil .grupo .fastLink .opc a {
-          display: none; } }
+          display: none; }
+  .slideImgs {
+    width: 100%; }
+    .slideImgs .slideshow {
+      width: 90%; } }

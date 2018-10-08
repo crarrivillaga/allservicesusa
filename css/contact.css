@@ -18,7 +18,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center; }
-    .datos .inside .accounts .icon-mail {
+    .datos .inside .accounts .icon {
       font-size: 20px; }
 
 .contact {
@@ -103,6 +103,8 @@
         border-bottom: 1px solid lightgray; }
 
 @media only screen and (max-width: 1020px) {
+  .datos .inside .accounts .opcContact {
+    margin: 15px 0; }
   .contact .inside .formContact form .fields {
     display: block;
     width: 100%;
