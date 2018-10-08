@@ -262,6 +262,7 @@ footer {
             align-content: center;
             justify-content: center;
             text-align: center;
+            margin-left: 0;
 
             .opc {
                margin-bottom: 20px;
@@ -271,6 +272,7 @@ footer {
                }
                .smallest {
                   display: block;
+                  text-align: center;
                }
 
                .icon {

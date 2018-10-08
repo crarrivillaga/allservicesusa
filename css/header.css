@@ -196,13 +196,15 @@ footer {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      text-align: center; }
+      text-align: center;
+      margin-left: 0; }
       .movil .grupo .fastLink .opc {
         margin-bottom: 20px; }
         .movil .grupo .fastLink .opc .small {
           display: none; }
         .movil .grupo .fastLink .opc .smallest {
-          display: block; }
+          display: block;
+          text-align: center; }
         .movil .grupo .fastLink .opc .icon {
           font-size: 25px; }
         .movil .grupo .fastLink .opc .icon-facebook {

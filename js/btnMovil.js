@@ -9,8 +9,8 @@ $(document).ready(function(){
          cont = 0;
       }else{
          cont = 1
-         $('body').css('overflow','auto');
          $('.movil').fadeOut();
+         $('body').css('overflow','auto');
       }
    })
 
