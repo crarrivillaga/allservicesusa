@@ -5,14 +5,16 @@
 body {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
-  color: #404040; }
+  color: #404040;
+  background: #F3F3F6; }
 
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid lightgray;
-  padding: 5px 20px; }
+  padding: 5px 20px;
+  background: white; }
   header .icon-menu {
     display: none; }
   header .logo img {
@@ -56,9 +58,10 @@ header {
     transition: 0.4s; }
 
 .slideImgs {
-  background: #F3F3F6; }
+  width: 70%;
+  margin: 0 auto; }
   .slideImgs .slideshow {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     padding: 20px;
     text-align: center; }

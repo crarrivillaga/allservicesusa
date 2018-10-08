@@ -18,6 +18,7 @@ body {
    font-family: 'Open Sans', sans-serif;
    width: 100%;
    color: rgb(64,64,64);
+   background: $assGrayColor;
 }
 
 
@@ -25,6 +26,7 @@ header {
    display: flex;
    border-bottom: 1px solid lightgray;
    padding:5px 20px;
+   background: white;
    
    .icon-menu{
       display: none;
@@ -81,9 +83,10 @@ header {
 }
 
 .slideImgs {
-   background: $assGrayColor;
+   width: 70%;
+   margin: 0 auto;
    .slideshow {
-      width: 70%;
+      width: 80%;
       margin: 0 auto;
       padding: 20px;
       text-align: center;
