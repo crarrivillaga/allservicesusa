@@ -29,7 +29,7 @@
 
          <ul class="desktopMenu">
             <li><a href="index.html" style="text-decoration: none;">INICIO</a></li>
-            <li><a href="index.html#shipping" style="text-decoration: none;">ENVÍOS</a></li>
+            <li><a href="shipping.html" style="text-decoration: none;">ENVÍOS</a></li>
             <li><a href="#" style="text-decoration: none;">PROMOCIONES</a></li>
             <li><a href="rates.html" style="text-decoration: none;">TARIFAS</a></li>
             <li><a href="contact.html" style="text-decoration: none;">CONTACTO</a></li>
@@ -41,7 +41,7 @@
          <div class="grupo">
             <ul class="responsiveMenu">
                <li><a href="index.html" style="text-decoration: none;">INICIO</a></li>
-               <li><a href="index.html#shipping" style="text-decoration: none;">ENVÍOS</a></li>
+               <li><a href="shipping.html" style="text-decoration: none;">ENVÍOS</a></li>
                <li><a href="#" style="text-decoration: none;">PROMOCIONES</a></li>
                <li><a href="rates.html" style="text-decoration: none;">TARIFAS</a></li>
                <li><a href="contact.html" style="text-decoration: none;">CONTACTO</a></li>
@@ -130,13 +130,21 @@
                               <div class="card-body">
                                  <label>Dimensiones en pulgadas (in)</label>
                                  <div class="dimentions">
-                                    <input type="text" class="form-control" id="large" placeholder="Longitud (in)"><p>X</p>
-                                    <input type="text" class="form-control" id="width" placeholder="Ancho (in)"><p>X</p>
-                                    <input type="text" class="form-control" id="height" placeholder="Altura (in)"><p>=</p>
+                                    <input type="text" class="form-control" id="large" placeholder="Longitud"><p>X</p>
+                                    <input type="text" class="form-control" id="width" placeholder="Ancho"><p>X</p>
+                                    <input type="text" class="form-control" id="height" placeholder="Altura"><p>=</p>
                                     <div class="finalresult">
-                                          <p id="result"></p><p id="format">ft<sup>3</sup></p>
+                                       <p id="result"></p><p id="format">ft<sup>3</sup></p>
                                     </div>
                                     <button class="btn btnResult" onclick="getResult()">RESULTADO</button>
+                                 </div>
+
+                                 <div class="price" id="price">
+                                    <p>Precio total: <b id="priceNumber"></b></p> 
+                                 </div>
+
+                                 <div id="errorMessage">
+                                    Debes colocar las tres medidas para obtener el resultado
                                  </div>
 
                                  <p class="need">Utiliza nuestro conversor de centímetros (cm) a pulgadas (in).</p>
@@ -186,7 +194,7 @@
                <div class="container">
                   <div class="row">
                      <div class="col-md-6 center-block delivery">
-                        <p>Precio por libra: $3.5 USD / lb</p>
+                        <p>Precio por libra:<br> $3.5 USD / lb</p>
                      </div>
                      <div class="col-md-6 delivery">
                         <p>Tiempo de entrega:<br> 4 a 5 días</p>

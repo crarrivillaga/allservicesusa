@@ -1,0 +1,44 @@
+.vzla, .cuba {
+  border-bottom: 1px solid lightgray; }
+  .vzla .inside, .cuba .inside {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px; }
+    .vzla .inside .title, .cuba .inside .title {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #292929; }
+    .vzla .inside .info, .cuba .inside .info {
+      font-size: 16px;
+      text-align: center; }
+      .vzla .inside .info .icon-mail, .cuba .inside .info .icon-mail {
+        font-size: 20px; }
+      .vzla .inside .info a, .cuba .inside .info a {
+        text-decoration: none;
+        font-size: 16px; }
+    .vzla .inside .cities, .cuba .inside .cities {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      font-size: 16px;
+      margin: 20px; }
+      .vzla .inside .cities ul, .cuba .inside .cities ul {
+        width: 30%;
+        margin: 0; }
+        .vzla .inside .cities ul li, .cuba .inside .cities ul li {
+          list-style: none;
+          text-align: center; }
+
+@media only screen and (max-width: 1020px) {
+  .vzla .inside .cities, .cuba .inside .cities {
+    display: block; }
+    .vzla .inside .cities ul, .cuba .inside .cities ul {
+      width: 100%;
+      margin: 0; } }

@@ -52,7 +52,7 @@ $assGrayColor: #F3F3F6;
       .aboutImg {
          width: 60%;
          position: relative;
-   
+
          img {
             width: 50%;
             @include centrado;
@@ -61,6 +61,30 @@ $assGrayColor: #F3F3F6;
    }
 }
 
+.objetive{
+   background: white;
+   .inside {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+
+      .mision, .vision {
+         .title {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+            color: $titleColor;
+         }
+
+         .info {
+            text-align: justify;
+            width: 90%;
+            margin: 0 auto;
+         }
+      }
+   }
+}
 
 .promo {
    background: rgb(10, 151, 86);
@@ -185,10 +209,11 @@ $assGrayColor: #F3F3F6;
 
             ul {
                width: 40%;
-               margin: 0 auto;
+               margin: 0 20px;
                
                li {
-                  list-style: circle;
+                  list-style: none;
+                  text-align: center;
                }
             }
          }

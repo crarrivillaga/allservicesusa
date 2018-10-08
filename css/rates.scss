@@ -114,10 +114,14 @@ $assYellowColor: #F7D701;
                         font-weight: bold;
                      }
 
-                     #result {
-                        margin:6px -10px;
-                        #format {
-                           margin: 6px -9px;
+                     .finalresult{
+                        display: flex;
+                        #result {
+                           margin:6px -10px;
+                           text-align: center;
+                           #format {
+                              margin: 6px -9px;
+                           }
                         }
                      }
 
@@ -135,6 +139,19 @@ $assYellowColor: #F7D701;
                         background: $assYellowColor;
                         color: black;
                      }
+                  }
+
+                  .price{
+                     display: flex;
+                     font-weight: bold;
+                     margin-top: 5px;
+                  }
+
+                  #errorMessage {
+                     text-align: center;
+                     color: rgb(156, 16, 16);
+                     font-weight: bold;
+                     margin-top: 5px;
                   }
                   
                   .need {

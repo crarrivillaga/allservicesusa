@@ -35,6 +35,23 @@
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%); }
 
+.objetive {
+  background: white; }
+  .objetive .inside {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px; }
+    .objetive .inside .mision .title, .objetive .inside .vision .title {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #292929; }
+    .objetive .inside .mision .info, .objetive .inside .vision .info {
+      text-align: justify;
+      width: 90%;
+      margin: 0 auto; }
+
 .promo {
   background: #0a9756;
   color: white; }
@@ -141,9 +158,10 @@
       font-size: 16px; }
       .shipping .inside .soon .newServices ul {
         width: 40%;
-        margin: 0 auto; }
+        margin: 0 20px; }
         .shipping .inside .soon .newServices ul li {
-          list-style: circle; }
+          list-style: none;
+          text-align: center; }
     .shipping .inside .prices {
       text-align: center;
       margin-top: 30px;

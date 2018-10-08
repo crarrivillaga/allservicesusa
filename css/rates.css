@@ -64,10 +64,15 @@
             margin: 6px 20px;
             text-align: center;
             font-weight: bold; }
-          .maritimo .inside .marit .calculator .card .card-body .dimentions #result {
-            margin: 6px -10px; }
-            .maritimo .inside .marit .calculator .card .card-body .dimentions #result #format {
-              margin: 6px -9px; }
+          .maritimo .inside .marit .calculator .card .card-body .dimentions .finalresult {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            .maritimo .inside .marit .calculator .card .card-body .dimentions .finalresult #result {
+              margin: 6px -10px;
+              text-align: center; }
+              .maritimo .inside .marit .calculator .card .card-body .dimentions .finalresult #result #format {
+                margin: 6px -9px; }
           .maritimo .inside .marit .calculator .card .card-body .dimentions .btnResult {
             background: #000051;
             color: white;
@@ -77,6 +82,17 @@
           .maritimo .inside .marit .calculator .card .card-body .dimentions .reset {
             background: #F7D701;
             color: black; }
+        .maritimo .inside .marit .calculator .card .card-body .price {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          font-weight: bold;
+          margin-top: 5px; }
+        .maritimo .inside .marit .calculator .card .card-body #errorMessage {
+          text-align: center;
+          color: #9c1010;
+          font-weight: bold;
+          margin-top: 5px; }
         .maritimo .inside .marit .calculator .card .card-body .need {
           margin: 20px 0; }
 
