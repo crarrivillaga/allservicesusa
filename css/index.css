@@ -202,4 +202,5 @@
   .shipping .inside .soon .newServices {
     display: block; }
     .shipping .inside .soon .newServices ul {
-      width: 100%; } }
+      width: 100%;
+      margin: 0; } }
