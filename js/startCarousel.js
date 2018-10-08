@@ -5,5 +5,6 @@ $(document).ready(function(){
       autoplaySpeed: 2200,
       fade: true,
       dots: false,
+      arrows: false,
    })
 })
