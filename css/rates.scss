@@ -116,6 +116,8 @@ $assYellowColor: #F7D701;
 
                      .finalresult{
                         display: flex;
+                        align-content: center;
+                        justify-content: center;
                         #result {
                            margin:6px -10px;
                            text-align: center;
@@ -145,13 +147,14 @@ $assYellowColor: #F7D701;
                      display: flex;
                      font-weight: bold;
                      margin-top: 5px;
+                     border-bottom: 2px solid rgb(10, 151, 86);
                   }
 
                   #errorMessage {
                      text-align: center;
                      color: rgb(156, 16, 16);
                      font-weight: bold;
-                     margin-top: 5px;
+                     margin-top: 10px;
                   }
                   
                   .need {
@@ -194,6 +197,12 @@ $assYellowColor: #F7D701;
                font-weight: bold;
                text-align: center;
                font-size: 20px;
+            }
+
+            img {
+               width: 50%;
+               @include centrado;
+               text-align: center;
             }
          }
       }
@@ -243,6 +252,10 @@ $assYellowColor: #F7D701;
                            width: 100%;
                         }
 
+                        p {
+                           margin: 6px 0px;
+                        }
+
                         .btnResult {
                            background: $assBlueColor;
                            color: white;
@@ -258,22 +271,29 @@ $assYellowColor: #F7D701;
                            background: $assYellowColor;
                            color: black;
                         }
-                     }
 
-                     .finalresult {
-                        display: flex;
-                        align-content: center;
-                        justify-content: center;
-                        text-align: center;
-                        #result {
-                           margin:6px 0px;
-                           #format {
-                              margin: 6px -2px;
+                        .finalresult {
+                           display: flex;
+                           align-content: center;
+                           justify-content: center;
+                           text-align: center;
+                           #result {
+                              margin:6px 0px;
+                              #format {
+                                 margin: 6px 0px;
+                              }
                            }
                         }
                      }
 
-                     
+                     .price{
+                        display: flex;
+                        font-weight: bold;
+                        margin-top: 10px;
+                        text-align: center;
+                        width: 50%;
+                        margin: 10px auto 0 auto;
+                     }
                   }
                }
             }

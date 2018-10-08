@@ -67,7 +67,12 @@
           .maritimo .inside .marit .calculator .card .card-body .dimentions .finalresult {
             display: -webkit-box;
             display: -ms-flexbox;
-            display: flex; }
+            display: flex;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center; }
             .maritimo .inside .marit .calculator .card .card-body .dimentions .finalresult #result {
               margin: 6px -10px;
               text-align: center; }
@@ -87,12 +92,13 @@
           display: -ms-flexbox;
           display: flex;
           font-weight: bold;
-          margin-top: 5px; }
+          margin-top: 5px;
+          border-bottom: 2px solid #0a9756; }
         .maritimo .inside .marit .calculator .card .card-body #errorMessage {
           text-align: center;
           color: #9c1010;
           font-weight: bold;
-          margin-top: 5px; }
+          margin-top: 10px; }
         .maritimo .inside .marit .calculator .card .card-body .need {
           margin: 20px 0; }
 
@@ -116,6 +122,15 @@
       font-weight: bold;
       text-align: center;
       font-size: 20px; }
+    .aereo .inside .air .delivery img {
+      width: 50%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center; }
 
 .others {
   background: #F7D701;
@@ -143,6 +158,8 @@
         display: block; }
         .maritimo .inside .marit .calculator .card .card-body .dimentions input {
           width: 100%; }
+        .maritimo .inside .marit .calculator .card .card-body .dimentions p {
+          margin: 6px 0px; }
         .maritimo .inside .marit .calculator .card .card-body .dimentions .btnResult {
           background: #000051;
           color: white;
@@ -153,19 +170,28 @@
         .maritimo .inside .marit .calculator .card .card-body .dimentions .reset {
           background: #F7D701;
           color: black; }
-      .maritimo .inside .marit .calculator .card .card-body .finalresult {
+        .maritimo .inside .marit .calculator .card .card-body .dimentions .finalresult {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-line-pack: center;
+          align-content: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          text-align: center; }
+          .maritimo .inside .marit .calculator .card .card-body .dimentions .finalresult #result {
+            margin: 6px 0px; }
+            .maritimo .inside .marit .calculator .card .card-body .dimentions .finalresult #result #format {
+              margin: 6px 0px; }
+      .maritimo .inside .marit .calculator .card .card-body .price {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        text-align: center; }
-        .maritimo .inside .marit .calculator .card .card-body .finalresult #result {
-          margin: 6px 0px; }
-          .maritimo .inside .marit .calculator .card .card-body .finalresult #result #format {
-            margin: 6px -2px; }
+        font-weight: bold;
+        margin-top: 10px;
+        text-align: center;
+        width: 50%;
+        margin: 10px auto 0 auto; }
   .aereo .inside .air .delivery {
     margin: 20px 0; } }
