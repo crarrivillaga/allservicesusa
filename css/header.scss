@@ -5,7 +5,14 @@
 
 $titleColor: rgb(41, 41, 41);
 $assGrayColor: #F3F3F6;
+$responsiveMenuBg: rgba(41, 41, 41, 0.904);
 
+@mixin centradoBtnMenu {
+   position: absolute;
+   left: 5%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
 
 body {
    font-family: 'Open Sans', sans-serif;
@@ -18,6 +25,10 @@ header {
    display: flex;
    border-bottom: 1px solid lightgray;
    padding:5px 20px;
+   
+   .icon-menu{
+      display: none;
+   }
 
    .logo {
       img {
@@ -26,7 +37,6 @@ header {
    }
 
    ul {
-      // background: green;
       display: flex;
       position: relative;
       margin-left: 10%;
@@ -47,6 +57,10 @@ header {
    }
 }
 
+.movil {
+   display: none;
+}
+
 #sky {
    display:none;
    font-size: 20px;
@@ -55,7 +69,7 @@ header {
    background: rgba(36, 36, 36, 0.5);
    position: fixed;
    cursor: pointer;
-   z-index: 999;
+   z-index: 1;
    border-radius: 255px;
    bottom: 20px;
    right: 20px;
@@ -86,5 +100,181 @@ footer {
       background: rgb(107, 107, 107);
       color: white;
       // font-weight: bold;
+   }
+}
+
+@media only screen and (max-width:1020px){
+   header {
+      display: flex;
+      border-bottom: 1px solid lightgray;
+      padding:5px 20px;
+      position: relative;
+      
+      .icon-menu-first{
+         display: block;
+         font-size: 25px;
+         @include centradoBtnMenu;
+         cursor: pointer;
+      }
+   
+      .logo {
+         margin: 0 auto;
+         text-align: center;
+         img {
+            width: 30%;
+         }
+      }
+   
+      ul {
+         display: none;
+      }
+   }
+   
+   .movil {
+      position: fixed;
+      z-index: 2;
+      top: 0px;
+      display: block;
+      background: $responsiveMenuBg;
+      height: 100%;
+      width: 100%;
+
+      .cerrar {
+         font-weight: bold;
+         font-size: 20px;
+         color: white;
+         margin-top: 20px;
+         margin-right: 20px;
+         margin-bottom: 0;
+         padding: 0;
+         text-align: right;
+
+         span {
+            cursor: pointer;
+         }
+      }
+   
+      .grupo {
+         display: flex;
+         // border-bottom: 1px solid white;
+         .responsiveMenu {
+            position: relative;
+            padding: 20px;
+            top: 0px;
+            border-right: 1px solid white;
+            height: 100%;
+            
+            li {
+               list-style: none;
+               margin: 20px;
+   
+               a {
+                  text-decoration: none;
+                  color: white;
+               }
+            }
+         }
+
+         .fastLink {
+            color: white;
+            position: relative;
+            margin-left: 40px;
+            margin-top: 40px;
+
+            .opc {
+               margin-bottom: 20px;
+
+               .smallest {
+                  display: none;
+               }
+
+               .icon-mail {
+                  font-size: 20px;
+               }
+   
+               a {
+                  text-decoration: none;
+                  font-size: 18px;
+                  color: white;
+               }
+            }
+         }
+      }
+   }
+
+   .icon-menu-second {
+      font-size: 25px;
+      padding: 10px;
+      color: white;
+      background: rgba(36, 36, 36, 0.5);
+      position: fixed;
+      cursor: pointer;
+      z-index: 1;
+      border-radius: 255px;
+      top: 20px;
+      left: 8px;
+      
+      &:hover {
+         background: rgb(36, 36, 36);
+         transition: 0.4s;
+      }
+   }
+}
+
+@media only screen and (max-width:521px){
+   .movil {
+   
+      .grupo {
+         display: block;
+         .responsiveMenu {
+            position: relative;
+            padding: 20px;
+            top: 0px;
+            border-right: none;
+            border-bottom: 1px solid white;
+            height: 100%;
+            
+            li {
+               list-style: none;
+               margin: 20px;
+   
+               a {
+                  text-decoration: none;
+                  color: white;
+               }
+            }
+         }
+
+         .fastLink {
+            color: white;
+            position: relative;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+
+            .opc {
+               margin-bottom: 20px;
+
+               .small {
+                  display: none;
+               }
+               .smallest {
+                  display: block;
+               }
+
+               .icon {
+                  font-size: 25px;
+               }
+               .icon-facebook {
+                  margin: 0 30px;
+               }
+   
+               a {
+                  display: none;
+               }
+            }
+         }
+      }
    }
 }

@@ -8,6 +8,13 @@ $assGrayColor: #F3F3F6;
    transform: translate(-50%, -50%);
 }
 
+@mixin reset {
+   position: relative;
+   left: 0;
+   top: 0;
+   transform: translate(0, 0);
+}
+
 .about {
    background: $assGrayColor;
    border-bottom: 1px solid lightgray;
@@ -55,7 +62,6 @@ $assGrayColor: #F3F3F6;
 }
 
 
-
 .promo {
    background: rgb(10, 151, 86);
    color: white;
@@ -73,7 +79,7 @@ $assGrayColor: #F3F3F6;
 
          img {
             width: 50%;
-            // @include centrado;
+            @include centrado;
          }
       }
 
@@ -123,8 +129,6 @@ $assGrayColor: #F3F3F6;
       }
    }
 }
-
-
 
 
 .shipping {
@@ -202,3 +206,54 @@ $assGrayColor: #F3F3F6;
    }
 }
 
+
+@media only screen and (max-width:1020px){
+   .about {
+      .inside {
+         display: block;
+
+         .aboutImg {
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
+
+            img {
+               width: 58%;
+               @include reset;
+            }
+         }
+      }
+   }
+
+   .promo {
+      .inside {
+         display: block;
+
+         .promoImg {
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
+   
+            img {
+               width: 65%;
+               margin-bottom: 20px;
+               @include reset;
+            }
+         }
+      }
+   }
+
+   .shipping {
+      .inside {
+         .soon {
+            .newServices {
+               display: block;
+
+               ul {
+                  width: 100%;
+               }
+            }
+         }
+      }
+   }
+}

@@ -13,23 +13,62 @@
       <link rel="stylesheet" href="css/rates.css">
       <link rel="stylesheet" href="css/slick-theme.css">
       <link rel="stylesheet" href="css/slick.css">
+      <link rel="stylesheet" href="icons/style.css">
       
       <title>All Services Solutions - USA</title>
    </head>
    <body>
+      <span class="icon-circle-up" id="sky"></span>
       <header>
+         <span class="icon-menu icon-menu-first"></span>
+         <span class="icon-menu icon-menu-second"></span>
+
          <div class="logo">
             <a href="index.html"><img src="images/imglogo.png" alt="" class="img-fluid"></a>
          </div>
 
-         <ul>
-            <!-- <li><a href="#" style="text-decoration: none;">Home</a></li> -->
-            <li><a href="index.html#shipping" style="text-decoration: none;">Servicios Logisticos</a></li>
-            <li><a href="#" style="text-decoration: none;">Promociones</a></li>
-            <li><a href="rates.html" style="text-decoration: none;">Tarifas</a></li>
-            <li><a href="#" style="text-decoration: none;">Contacto</a></li>
+         <ul class="desktopMenu">
+            <li><a href="index.html" style="text-decoration: none;">INICIO</a></li>
+            <li><a href="index.html#shipping" style="text-decoration: none;">ENVÍOS</a></li>
+            <li><a href="#" style="text-decoration: none;">PROMOCIONES</a></li>
+            <li><a href="rates.html" style="text-decoration: none;">TARIFAS</a></li>
+            <li><a href="contact.html" style="text-decoration: none;">CONTACTO</a></li>
          </ul>
       </header>
+
+      <div class="movil">
+         <div class="cerrar"><span class="icon-x"></span></div>
+         <div class="grupo">
+            <ul class="responsiveMenu">
+               <li><a href="index.html" style="text-decoration: none;">INICIO</a></li>
+               <li><a href="index.html#shipping" style="text-decoration: none;">ENVÍOS</a></li>
+               <li><a href="#" style="text-decoration: none;">PROMOCIONES</a></li>
+               <li><a href="rates.html" style="text-decoration: none;">TARIFAS</a></li>
+               <li><a href="contact.html" style="text-decoration: none;">CONTACTO</a></li>
+            </ul>
+
+            <div class="fastLink">
+               <div class="opc">
+                  <span class="icon-mail icon small"></span>
+                  <a href="mailto:allservicescontact@gmail.com" class="small">allservicescontact@gmail.com</a>
+                  
+                  <a href="mailto:allservicescontact@gmail.com" class="smallest"><span class="icon-mail icon"></span></a>
+               </div>
+               <div class="opc">
+                  <span class="icon-facebook icon small"></span>
+                  <a href="" class="small">Facebook</a>
+
+                  <a href="mailto:allservicescontact@gmail.com" class="smallest"><span class="icon-facebook icon"></span></a>
+               </div>
+               <div class="opc">
+                  <span class="icon-twitter icon small"></span>
+                  <a href="" class="small">Twitter</a>
+
+                  <a href="mailto:allservicescontact@gmail.com" class="smallest"><span class="icon-twitter icon"></span></a>
+               </div>
+            </div>
+         </div>
+      </div>
 
       <div class="slideImgs">
          <div class="slideshow">
@@ -89,12 +128,14 @@
 
                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                               <div class="card-body">
-                                 <label>Dimensiones</label>
+                                 <label>Dimensiones en pulgadas (in)</label>
                                  <div class="dimentions">
-                                    <input type="text" class="form-control" id="large" placeholder="Longitud"><p>X</p>
-                                    <input type="text" class="form-control" id="width" placeholder="Ancho"><p>X</p>
-                                    <input type="text" class="form-control" id="height" placeholder="Altura"><p>=</p>
-                                    <p id="result"></p><p id="format">ft<sup>3</sup></p>
+                                    <input type="text" class="form-control" id="large" placeholder="Longitud (in)"><p>X</p>
+                                    <input type="text" class="form-control" id="width" placeholder="Ancho (in)"><p>X</p>
+                                    <input type="text" class="form-control" id="height" placeholder="Altura (in)"><p>=</p>
+                                    <div class="finalresult">
+                                          <p id="result"></p><p id="format">ft<sup>3</sup></p>
+                                    </div>
                                     <button class="btn btnResult" onclick="getResult()">RESULTADO</button>
                                  </div>
 
@@ -186,7 +227,8 @@
          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
          <script src="js/calculator.js"></script>
-         <script src="js/goUp.js"></script>
+         <script src="js/showBtns.js"></script>
+         <script src="js/btnMovil.js"></script>
          <script src="js/slick.min.js"></script>
          <script src="js/startCarousel.js"></script>
       </div>

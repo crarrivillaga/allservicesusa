@@ -13,6 +13,8 @@ header {
   display: flex;
   border-bottom: 1px solid lightgray;
   padding: 5px 20px; }
+  header .icon-menu {
+    display: none; }
   header .logo img {
     width: 30%; }
   header ul {
@@ -32,6 +34,9 @@ header {
         color: #292929;
         font-weight: bold; }
 
+.movil {
+  display: none; }
+
 #sky {
   display: none;
   font-size: 20px;
@@ -40,7 +45,7 @@ header {
   background: rgba(36, 36, 36, 0.5);
   position: fixed;
   cursor: pointer;
-  z-index: 999;
+  z-index: 1;
   border-radius: 255px;
   bottom: 20px;
   right: 20px; }
@@ -65,3 +70,136 @@ footer {
     padding: 10px;
     background: #6b6b6b;
     color: white; }
+
+@media only screen and (max-width: 1020px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    padding: 5px 20px;
+    position: relative; }
+    header .icon-menu-first {
+      display: block;
+      font-size: 25px;
+      position: absolute;
+      left: 5%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      cursor: pointer; }
+    header .logo {
+      margin: 0 auto;
+      text-align: center; }
+      header .logo img {
+        width: 30%; }
+    header ul {
+      display: none; }
+  .movil {
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    display: block;
+    background: rgba(41, 41, 41, 0.904);
+    height: 100%;
+    width: 100%; }
+    .movil .cerrar {
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-bottom: 0;
+      padding: 0;
+      text-align: right; }
+      .movil .cerrar span {
+        cursor: pointer; }
+    .movil .grupo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .movil .grupo .responsiveMenu {
+        position: relative;
+        padding: 20px;
+        top: 0px;
+        border-right: 1px solid white;
+        height: 100%; }
+        .movil .grupo .responsiveMenu li {
+          list-style: none;
+          margin: 20px; }
+          .movil .grupo .responsiveMenu li a {
+            text-decoration: none;
+            color: white; }
+      .movil .grupo .fastLink {
+        color: white;
+        position: relative;
+        margin-left: 40px;
+        margin-top: 40px; }
+        .movil .grupo .fastLink .opc {
+          margin-bottom: 20px; }
+          .movil .grupo .fastLink .opc .smallest {
+            display: none; }
+          .movil .grupo .fastLink .opc .icon-mail {
+            font-size: 20px; }
+          .movil .grupo .fastLink .opc a {
+            text-decoration: none;
+            font-size: 18px;
+            color: white; }
+  .icon-menu-second {
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    background: rgba(36, 36, 36, 0.5);
+    position: fixed;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 255px;
+    top: 20px;
+    left: 8px; }
+    .icon-menu-second:hover {
+      background: #242424;
+      -webkit-transition: 0.4s;
+      -o-transition: 0.4s;
+      transition: 0.4s; } }
+
+@media only screen and (max-width: 521px) {
+  .movil .grupo {
+    display: block; }
+    .movil .grupo .responsiveMenu {
+      position: relative;
+      padding: 20px;
+      top: 0px;
+      border-right: none;
+      border-bottom: 1px solid white;
+      height: 100%; }
+      .movil .grupo .responsiveMenu li {
+        list-style: none;
+        margin: 20px; }
+        .movil .grupo .responsiveMenu li a {
+          text-decoration: none;
+          color: white; }
+    .movil .grupo .fastLink {
+      color: white;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center; }
+      .movil .grupo .fastLink .opc {
+        margin-bottom: 20px; }
+        .movil .grupo .fastLink .opc .small {
+          display: none; }
+        .movil .grupo .fastLink .opc .smallest {
+          display: block; }
+        .movil .grupo .fastLink .opc .icon {
+          font-size: 25px; }
+        .movil .grupo .fastLink .opc .icon-facebook {
+          margin: 0 30px; }
+        .movil .grupo .fastLink .opc a {
+          display: none; } }

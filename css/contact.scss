@@ -5,7 +5,6 @@ $assGrayColor: #F3F3F6;
 $assYellowColor: #F7D701;
 
 .datos {
-   
    .inside {
       width: 90%;
       margin: 0 auto;
@@ -31,48 +30,6 @@ $assYellowColor: #F7D701;
       }
    }
 
-}
-
-.fyq {
-   background: $assGrayColor;
-
-   .inside {
-      width: 90%;
-      margin: 0 auto;
-      padding: 20px;
-
-      .title {
-         font-size: 25px;
-         font-weight: bold;
-         margin-bottom: 30px;
-         text-align: center;
-         color: $titleColor;
-      }
-
-      .accordion {
-         width: 80%;
-         margin: 0 auto;
-
-         button {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            padding: 0;
-         }
-
-         .card {
-            margin: 10px;
-         }
-
-         .card-header {
-            background: $assBlueColor;
-         }
-
-         .collapse {
-            border-bottom: 1px solid lightgray;
-         }
-      }
-   }
 }
 
 
@@ -138,6 +95,82 @@ $assYellowColor: #F7D701;
                   font-weight: bold;
                }
             }
+         }
+      }
+   }
+}
+
+.fyq {
+   background: $assGrayColor;
+
+   .inside {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+
+      .title {
+         font-size: 25px;
+         font-weight: bold;
+         margin-bottom: 30px;
+         text-align: center;
+         color: $titleColor;
+      }
+
+      .accordion {
+         width: 80%;
+         margin: 0 auto;
+
+         button {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 0;
+         }
+
+         .card {
+            margin: 10px;
+         }
+
+         .card-header {
+            background: $assBlueColor;
+         }
+
+         .collapse {
+            border-bottom: 1px solid lightgray;
+         }
+      }
+   }
+}
+
+
+@media only screen and (max-width:1020px){
+   .contact {
+      .inside {
+         .formContact {
+            form {
+               .fields {
+                  display: block;
+                  width: 100%;
+                  margin: 0;
+
+                  .form-group {
+                     margin: 0 auto;
+                     width: 90%;
+                  }
+               }
+
+               .message {
+                  width: 90%;
+               }
+            }
+         }
+      }
+   }
+
+   .fyq {
+      .inside {
+         .accordion {
+            width: 100%;
          }
       }
    }

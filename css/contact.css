@@ -21,33 +21,6 @@
     .datos .inside .accounts .icon-mail {
       font-size: 20px; }
 
-.fyq {
-  background: #F3F3F6; }
-  .fyq .inside {
-    width: 90%;
-    margin: 0 auto;
-    padding: 20px; }
-    .fyq .inside .title {
-      font-size: 25px;
-      font-weight: bold;
-      margin-bottom: 30px;
-      text-align: center;
-      color: #292929; }
-    .fyq .inside .accordion {
-      width: 80%;
-      margin: 0 auto; }
-      .fyq .inside .accordion button {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        padding: 0; }
-      .fyq .inside .accordion .card {
-        margin: 10px; }
-      .fyq .inside .accordion .card-header {
-        background: #000051; }
-      .fyq .inside .accordion .collapse {
-        border-bottom: 1px solid lightgray; }
-
 .contact {
   border-bottom: 1px solid lightgray;
   color: #292929; }
@@ -101,3 +74,43 @@
           color: white;
           font-size: 15px;
           font-weight: bold; }
+
+.fyq {
+  background: #F3F3F6; }
+  .fyq .inside {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px; }
+    .fyq .inside .title {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #292929; }
+    .fyq .inside .accordion {
+      width: 80%;
+      margin: 0 auto; }
+      .fyq .inside .accordion button {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 0; }
+      .fyq .inside .accordion .card {
+        margin: 10px; }
+      .fyq .inside .accordion .card-header {
+        background: #000051; }
+      .fyq .inside .accordion .collapse {
+        border-bottom: 1px solid lightgray; }
+
+@media only screen and (max-width: 1020px) {
+  .contact .inside .formContact form .fields {
+    display: block;
+    width: 100%;
+    margin: 0; }
+    .contact .inside .formContact form .fields .form-group {
+      margin: 0 auto;
+      width: 90%; }
+  .contact .inside .formContact form .message {
+    width: 90%; }
+  .fyq .inside .accordion {
+    width: 100%; } }

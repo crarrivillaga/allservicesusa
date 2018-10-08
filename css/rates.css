@@ -6,11 +6,10 @@
     padding: 20px; }
     .maritimo .inside .title {
       font-weight: bold;
-      font-size: 30px;
+      font-size: 25px;
       margin-bottom: 30px;
       color: #292929;
-      border-bottom: 3px solid #000066;
-      width: 25%; }
+      text-align: center; }
     .maritimo .inside .marit .boxes {
       text-align: center; }
       .maritimo .inside .marit .boxes img {
@@ -87,11 +86,10 @@
   padding: 20px; }
   .aereo .inside .title {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 30px;
     color: #292929;
-    border-bottom: 3px solid #000066;
-    width: 25%; }
+    text-align: center; }
   .aereo .inside .air .data p, .aereo .inside .air .data small {
     margin: 10px 0;
     text-align: center;
@@ -116,3 +114,42 @@
       list-style: circle;
       font-size: 17px;
       color: black; }
+
+@media only screen and (max-width: 1020px) {
+  .maritimo .inside {
+    width: 100%; }
+    .maritimo .inside .marit .delivery {
+      margin: 20px auto; }
+    .maritimo .inside .marit .calculator {
+      width: 100%;
+      padding: -20px; }
+      .maritimo .inside .marit .calculator .card .card-body .dimentions {
+        display: block; }
+        .maritimo .inside .marit .calculator .card .card-body .dimentions input {
+          width: 100%; }
+        .maritimo .inside .marit .calculator .card .card-body .dimentions .btnResult {
+          background: #000051;
+          color: white;
+          font-size: 15px;
+          width: 100%; }
+        .maritimo .inside .marit .calculator .card .card-body .dimentions .btnConvert {
+          margin: 10px 0; }
+        .maritimo .inside .marit .calculator .card .card-body .dimentions .reset {
+          background: #F7D701;
+          color: black; }
+      .maritimo .inside .marit .calculator .card .card-body .finalresult {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center; }
+        .maritimo .inside .marit .calculator .card .card-body .finalresult #result {
+          margin: 6px 0px; }
+          .maritimo .inside .marit .calculator .card .card-body .finalresult #result #format {
+            margin: 6px -2px; }
+  .aereo .inside .air .delivery {
+    margin: 20px 0; } }

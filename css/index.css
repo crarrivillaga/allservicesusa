@@ -50,7 +50,13 @@
       position: relative;
       text-align: center; }
       .promo .inside .promoImg img {
-        width: 50%; }
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
     .promo .inside .subs .title {
       font-size: 25px;
       font-weight: bold;
@@ -144,3 +150,38 @@
       font-size: 20px; }
       .shipping .inside .prices a {
         color: #292929; }
+
+@media only screen and (max-width: 1020px) {
+  .about .inside {
+    display: block; }
+    .about .inside .aboutImg {
+      width: 70%;
+      text-align: center;
+      margin: 0 auto; }
+      .about .inside .aboutImg img {
+        width: 58%;
+        position: relative;
+        left: 0;
+        top: 0;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0); }
+  .promo .inside {
+    display: block; }
+    .promo .inside .promoImg {
+      width: 70%;
+      text-align: center;
+      margin: 0 auto; }
+      .promo .inside .promoImg img {
+        width: 65%;
+        margin-bottom: 20px;
+        position: relative;
+        left: 0;
+        top: 0;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0); }
+  .shipping .inside .soon .newServices {
+    display: block; }
+    .shipping .inside .soon .newServices ul {
+      width: 100%; } }
