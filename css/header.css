@@ -61,7 +61,7 @@ header {
   width: 80%;
   margin: 0 auto; }
   .slideImgs .slideshow {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: 20px;
     text-align: center; }
@@ -100,8 +100,10 @@ footer {
         width: 30%; }
     header ul {
       display: none; }
-  .slideImgs .slideshow {
-    width: 70%; }
+  .slideImgs {
+    width: 100%; }
+    .slideImgs .slideshow {
+      width: 90%; }
   .movil {
     position: fixed;
     z-index: 2;
