@@ -108,16 +108,23 @@ footer {
     border-bottom: 1px solid lightgray;
     padding: 5px 20px;
     position: relative; }
-    header .icon-menu-first {
+    header .icon-menu {
       display: block;
       font-size: 25px;
-      position: absolute;
-      left: 5%;
-      top: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      cursor: pointer; }
+      padding: 10px;
+      color: white;
+      background: rgba(36, 36, 36, 0.5);
+      position: fixed;
+      cursor: pointer;
+      z-index: 1;
+      border-radius: 255px;
+      top: 20px;
+      left: 8px; }
+      header .icon-menu:hover {
+        background: #242424;
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s; }
     header .logo {
       margin: 0 auto;
       text-align: center; }
@@ -178,23 +185,7 @@ footer {
           .movil .grupo .fastLink .opc a {
             text-decoration: none;
             font-size: 18px;
-            color: white; }
-  .icon-menu-second {
-    font-size: 25px;
-    padding: 10px;
-    color: white;
-    background: rgba(36, 36, 36, 0.5);
-    position: fixed;
-    cursor: pointer;
-    z-index: 1;
-    border-radius: 255px;
-    top: 20px;
-    left: 8px; }
-    .icon-menu-second:hover {
-      background: #242424;
-      -webkit-transition: 0.4s;
-      -o-transition: 0.4s;
-      transition: 0.4s; } }
+            color: white; } }
 
 @media only screen and (max-width: 521px) {
   .movil .grupo {

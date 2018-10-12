@@ -12,10 +12,10 @@ $(document).ready(function(){
          $('#sky').slideUp(300);
       } 
 
-      if($(this).scrollTop() > 90){
+      /*if($(this).scrollTop() > 90){
          $('.icon-menu-second').slideDown(300);
       }else{
          $('.icon-menu-second').addClass('icon-menu').slideUp(300);
-      } 
+      } */
    });
 });
