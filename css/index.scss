@@ -282,6 +282,25 @@ $assYellowColor: #F7D701;
                @include reset;
             }
          }
+
+         .subs {
+            .subscribe {
+               form {
+                  .form-group {
+                     display: block;
+
+                     input, button {
+                        width: 80%;
+                        margin: 10px auto;
+                     }
+
+                     button {
+                        width: 100%;
+                     }
+                  }
+               }
+            }
+         }
       }
    }
 

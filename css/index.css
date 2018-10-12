@@ -208,6 +208,13 @@
         -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
         transform: translate(0, 0); }
+    .promo .inside .subs .subscribe form .form-group {
+      display: block; }
+      .promo .inside .subs .subscribe form .form-group input, .promo .inside .subs .subscribe form .form-group button {
+        width: 80%;
+        margin: 10px auto; }
+      .promo .inside .subs .subscribe form .form-group button {
+        width: 100%; }
   .shipping .inside .soon .newServices {
     display: block; }
     .shipping .inside .soon .newServices ul {
