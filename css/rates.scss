@@ -200,7 +200,7 @@ $assYellowColor: #F7D701;
             }
 
             img {
-               width: 50%;
+               width: 55%;
                @include centrado;
                text-align: center;
             }
@@ -289,7 +289,7 @@ $assYellowColor: #F7D701;
                      .price{
                         display: flex;
                         font-weight: bold;
-                        margin-top: 10px;
+                        // margin-top: 10px;
                         text-align: center;
                         width: 60%;
                         margin: 10px auto 0 auto;
@@ -305,6 +305,12 @@ $assYellowColor: #F7D701;
       .inside {
          .air {
             .delivery {
+               img {
+                  width: 55%;
+               }
+            }
+
+            .data {
                margin: 20px 0;
             }
          }

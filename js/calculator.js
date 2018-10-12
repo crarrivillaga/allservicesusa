@@ -50,22 +50,23 @@ function getResult(){
       result1 = large * width * height
       result2 = result1 / feet
       // var final = Math.round(result2)
-      result2 = result2.toFixed(1)
+      var result2Rounded = result2.toFixed(1)
       console.log('result2 ' + result2)
       // result2 = Math.round(result2)
       console.log('result2 ' + result2)
 
       var precio = result2 * pricePerFeet
-      console.log('preciofull ' + precio)
-      precio = precio.toFixed(2)
-      console.log('preciofinal ' + precio)
+      // console.log('preciofull ' + precio)
+      // precio = precio.toFixed(2)
+      precio = Math.round(precio)
+      // console.log('preciofinal ' + precio)
 
       
       document.getElementById('result').style.display = 'block';
       document.getElementById('format').style.display = 'block';
       document.getElementById('price').style.display = 'block';
 
-      document.getElementById('result').innerHTML = result2;
+      document.getElementById('result').innerHTML = result2Rounded;
       document.getElementById('priceNumber').innerHTML ='$' + precio + ' USD';
    }
 }

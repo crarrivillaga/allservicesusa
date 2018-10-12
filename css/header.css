@@ -8,6 +8,17 @@ body {
   color: #404040;
   background: #F3F3F6; }
 
+.socialnets {
+  background: #000051; }
+  .socialnets .inside {
+    padding: 5px 20px;
+    text-align: right; }
+    .socialnets .inside a {
+      text-decoration: none;
+      font-weight: 25px;
+      color: white;
+      margin-left: 20px; }
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,8 +28,10 @@ header {
   background: white; }
   header .icon-menu {
     display: none; }
-  header .logo img {
-    width: 30%; }
+  header .logo {
+    position: relative; }
+    header .logo img {
+      width: 30%; }
   header ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -50,7 +63,7 @@ header {
   z-index: 1;
   border-radius: 255px;
   bottom: 20px;
-  right: 20px; }
+  right: 2.5%; }
   #sky:hover {
     background: #242424;
     -webkit-transition: 0.4s;
@@ -74,8 +87,20 @@ footer {
     padding: 10px;
     background: #6b6b6b;
     color: white; }
+    footer .inside .socials {
+      text-align: center;
+      padding: 10px 0; }
+      footer .inside .socials a {
+        text-decoration: none;
+        color: white; }
+        footer .inside .socials a span {
+          font-size: 20px; }
+        footer .inside .socials a .icon-facebook {
+          margin: 0 20px; }
 
 @media only screen and (max-width: 1020px) {
+  .socialnets {
+    display: none; }
   header {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -52,66 +52,71 @@
       width: 90%;
       margin: 0 auto; }
 
+.responsivePromo {
+  display: none; }
+
 .promo {
-  background: #0a9756;
+  background: #000051;
   color: white; }
   .promo .inside {
     width: 90%;
     margin: 0 auto;
-    padding: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    padding: 20px; }
     .promo .inside .promoImg {
       width: 50%;
       position: relative;
       text-align: center; }
       .promo .inside .promoImg img {
-        width: 50%;
+        width: 60%;
         position: absolute;
         left: 50%;
         top: 50%;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%); }
-    .promo .inside .subs .title {
-      font-size: 25px;
-      font-weight: bold;
-      margin-bottom: 30px;
-      text-align: center;
-      color: white; }
-    .promo .inside .subs .text {
-      text-align: center;
-      font-size: 16px;
-      margin-bottom: 20px; }
-    .promo .inside .subs .subscribe {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-line-pack: center;
-      align-content: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-      .promo .inside .subs .subscribe form {
-        width: 100%; }
-        .promo .inside .subs .subscribe form .form-group {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-line-pack: center;
-          align-content: center;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center; }
-          .promo .inside .subs .subscribe form .form-group input {
-            width: 60%;
-            margin-right: 10px; }
-          .promo .inside .subs .subscribe form .form-group .btnSubs {
-            background: #000051;
-            color: white;
-            font-size: 15px;
-            font-weight: bold; }
+    .promo .inside .subs {
+      padding: 20px; }
+      .promo .inside .subs .title {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-align: center;
+        color: white; }
+      .promo .inside .subs .text {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 20px; }
+      .promo .inside .subs .subscribe {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .promo .inside .subs .subscribe form {
+          width: 100%; }
+          .promo .inside .subs .subscribe form .form-group {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-line-pack: center;
+            align-content: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center; }
+            .promo .inside .subs .subscribe form .form-group input {
+              width: 60%;
+              margin-right: 10px; }
+            .promo .inside .subs .subscribe form .form-group .btnSubs {
+              background: #F7D701;
+              color: black;
+              font-size: 15px;
+              font-weight: bold; }
 
 .shipping {
   background: #F3F3F6; }
@@ -184,14 +189,18 @@
         -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
         transform: translate(0, 0); }
+  .laptopPromo {
+    display: none; }
+  .responsivePromo {
+    display: block; }
   .promo .inside {
     display: block; }
     .promo .inside .promoImg {
-      width: 70%;
+      width: 40%;
       text-align: center;
       margin: 0 auto; }
       .promo .inside .promoImg img {
-        width: 65%;
+        width: 45%;
         margin-bottom: 20px;
         position: relative;
         left: 0;

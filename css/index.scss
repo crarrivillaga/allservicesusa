@@ -1,5 +1,8 @@
 $titleColor: rgb(41, 41, 41);
 $assGrayColor: #F3F3F6;
+$assDarkGrayColor: #424242;
+$assBlueColor: #000051;
+$assYellowColor: #F7D701;
 
 @mixin centrado {
    position: absolute;
@@ -20,7 +23,7 @@ $assGrayColor: #F3F3F6;
    border-bottom: 1px solid lightgray;
 
    .inside {
-      color: rgb(66, 66, 66);
+      color: $assDarkGrayColor;
       width: 90%;
       margin: 0 auto;
       display: flex;
@@ -86,15 +89,20 @@ $assGrayColor: #F3F3F6;
    }
 }
 
+.responsivePromo {
+   display: none;
+}
+
 .promo {
-   background: rgb(10, 151, 86);
+   // background: rgb(10, 151, 86);
+   background: $assBlueColor;
    color: white;
 
    .inside {
       width: 90%;
       margin: 0 auto;
-      padding: 20px;
       display: flex;
+      padding: 20px;
 
       .promoImg {
          width: 50%;
@@ -102,27 +110,28 @@ $assGrayColor: #F3F3F6;
          text-align: center;
 
          img {
-            width: 50%;
+            width: 60%;
             @include centrado;
          }
       }
 
       .subs {
-         .title {
+        padding: 20px;
+        .title {
             font-size: 25px;
             font-weight: bold;
             margin-bottom: 30px;
             text-align: center;
             color: white;
-         }
+        }
 
-         .text {
+        .text {
             text-align: center;
             font-size: 16px;
             margin-bottom: 20px;
-         }
+        }
 
-         .subscribe {
+        .subscribe {
             display: flex;
             align-content: center;
             justify-content: center;
@@ -140,10 +149,10 @@ $assGrayColor: #F3F3F6;
                      width: 60%;
                      margin-right: 10px;
                   }
-      
+        
                   .btnSubs {
-                     background: #000051;
-                     color: white;
+                     background: $assYellowColor;
+                     color: black;
                      font-size: 15px;
                      font-weight: bold;
                   }
@@ -250,17 +259,25 @@ $assGrayColor: #F3F3F6;
       }
    }
 
+   .laptopPromo {
+      display: none;
+   }
+
+   .responsivePromo {
+      display: block;
+   }
+
    .promo {
       .inside {
          display: block;
 
          .promoImg {
-            width: 70%;
+            width: 40%;
             text-align: center;
             margin: 0 auto;
    
             img {
-               width: 65%;
+               width: 45%;
                margin-bottom: 20px;
                @include reset;
             }
