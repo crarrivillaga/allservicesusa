@@ -213,3 +213,20 @@
     .shipping .inside .soon .newServices ul {
       width: 100%;
       margin: 0; } }
+
+@media only screen and (max-width: 521px) {
+  .promo .inside {
+    display: block; }
+    .promo .inside .promoImg {
+      width: 40%;
+      text-align: center;
+      margin: 0 auto; }
+      .promo .inside .promoImg img {
+        width: 55%;
+        margin-bottom: 20px;
+        position: relative;
+        left: 0;
+        top: 0;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0); } }

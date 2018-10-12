@@ -300,3 +300,23 @@ $assYellowColor: #F7D701;
       }
    }
 }
+
+@media only screen and (max-width:521px){
+   .promo {
+      .inside {
+         display: block;
+
+         .promoImg {
+            width: 40%;
+            text-align: center;
+            margin: 0 auto;
+   
+            img {
+               width: 55%;
+               margin-bottom: 20px;
+               @include reset;
+            }
+         }
+      }
+   }
+}
